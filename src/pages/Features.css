@@ -1,0 +1,127 @@
+h1:first-of-type {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+h1:nth-of-type(2) {
+  text-align: center;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 20px;
+}
+
+.feature-wrapper {
+  margin-bottom: 100px;
+}
+
+.feature-wrapper > p:first-of-type {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.cardss {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 1000px;
+  height: 440px;
+  margin: auto;
+  padding-left: 20px;
+}
+.cardss div {
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  box-shadow: 0px 0px 10px 5px hsl(229deg 6% 66% / 20%);
+  color: hsl(234, 12%, 34%);
+  background-color: #fff;
+}
+
+h3 {
+  margin: 20px 15px 10px 25px;
+  color: hsl(234, 12%, 34%);
+}
+.cardss > div > p {
+  font-size: smaller;
+  color: hsl(229, 6%, 66%);
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.feature-img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+}
+.superr {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  grid-area: 2/1 / span 2/1;
+}
+.teamm {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  grid-area: 1/2 / span 2/2;
+}
+.karmaa {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  grid-area: 3/2 / span 2/2;
+}
+.calcc {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  grid-area: 2/3 / span 2/3;
+}
+
+/* ----------------media queries-------------------- */
+
+@media (max-width: 1000px) {
+  .cardss {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    gap: 20px;
+    padding: 0 50px;
+  }
+
+  .cardss div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardss {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .feature-wrapper {
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  .feature-wrapper > p:first-of-type {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    margin: auto;
+    text-align: left;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  h1:nth-of-type(2) {
+    text-align: left;
+  }
+
+  h1:first-of-type {
+    text-align: left;
+  }
+}
