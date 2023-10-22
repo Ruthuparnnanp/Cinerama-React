@@ -1,0 +1,40 @@
+<!-- logo -->
+<Link
+className="logo-link"
+>
+<img
+  src="https://i.imgur.com/AYldSBG.png"
+  alt="logo"
+  className="logo-image"
+/>
+</Link>
+
+<!-- category -->
+<Link
+className="category-link current"
+href="#"
+onclick="sortMovies('popularity')"
+>
+<div className="genre">Popular</div>
+</Link>
+
+<!-- search bar -->
+<div className="search">
+    <form className="search-form">
+      <button type="submit" className="search-button">
+        <i className="fa fa-search"></i>
+      </button>
+      <input
+        id="search"
+        type="search"
+        placeholder="&nbsp; Search for a movie..."
+        className="search-input"
+        value=""
+      />
+    </form>
+  </div>
+
+  <!-- load more icon -->
+  <div className="load-more">
+    <i className="fa fa-plus-circle more" aria-hidden="true"></i>
+  </div>

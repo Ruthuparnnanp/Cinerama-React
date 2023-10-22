@@ -15,7 +15,7 @@ const LandingPage = () => {
       <div className="container">
         <Row style={{ height: "90vh" }} className="mb-5 p-3 align-items-center">
           <Col md={6}>
-            <h1 className="fw-bold heading ">CINERAMA</h1>
+            <h1 className="fw-bold heading bounce-in-top">CINERAMA</h1>
             <hr className="hr" />
             <p style={{ textAlign: "justify" }}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam

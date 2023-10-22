@@ -21,7 +21,7 @@ export default function App() {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards, Pagination]}
-        className="mySwiper"
+        className="mySwiper roll-in-blurred-left"
         pagination={true}
         autoplay={true}
       >

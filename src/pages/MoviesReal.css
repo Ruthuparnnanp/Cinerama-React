@@ -1,0 +1,19 @@
+.movies-sidebar {
+  width: 20vw !important;
+  border: 2px solid red;
+  padding: 10px;
+}
+
+.movies-wrapper {
+  display: flex;
+  border: 5px solid blue;
+  height: 93vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.movies-container {
+  width: 100%;
+  overflow-x: hidden;
+  border: 2px gold solid;
+}
