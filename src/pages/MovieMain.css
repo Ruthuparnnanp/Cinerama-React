@@ -153,6 +153,7 @@ button {
 
 .search-form {
   position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -180,6 +181,7 @@ button {
 .search-form:hover {
   position: relative;
   display: flex;
+  gap: 10px;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -225,8 +227,7 @@ button {
 
 .search-button {
   line-height: 1;
-  pointer-events: none;
-  cursor: none;
+  cursor: pointer;
   background-color: transparent;
   border: none;
   outline: none;
@@ -431,6 +432,10 @@ button {
   -webkit-box-pack: center;
   justify-content: center;
   padding: 6rem 4rem;
+}
+
+.logo-image {
+  height: 110px !important;
 }
 
 .search {

@@ -1,7 +1,10 @@
 .roww {
-  max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 38px;
+  flex-wrap: wrap;
 }
 
 .figuree {
@@ -78,6 +81,7 @@
   margin: 0;
   padding: 5px 10px;
   text-transform: uppercase;
+  border-radius: 6px !important;
 }
 
 .section-1 .figuree Link {

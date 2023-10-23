@@ -17,3 +17,96 @@
   overflow-x: hidden;
   border: 2px gold solid;
 }
+
+/* view more icon styles */
+/* Note that you only needs to edit the config to customize the button! */
+
+.Btnn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100px;
+  height: 40px;
+  border: none;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+  background-color: rgb(168, 38, 255);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgb(140, 32, 212);
+  transition-duration: 0.3s;
+}
+
+.svgg {
+  width: 13px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: 0.3s;
+}
+
+.Btnn:hover {
+  color: transparent;
+}
+
+.Btnn:hover svg {
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: 0.3s;
+}
+
+.Btnn:active {
+  transform: translate(3px, 3px);
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+/* -----------view more button of card while hovering-------------------- */
+.btnViewMore {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #999;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.btnViewMore:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: rgb(253, 240, 167);
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.btnViewMore:hover {
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btnViewMore:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.btnViewMore:active {
+  transform: scale(0.9);
+}
+/* --------------------------------------------- */

@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import MovieMain from "./pages/MovieMain";
+import MovieOverview from "./pages/MovieOverview";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<MovieMain />} />
+        <Route path="/overview/:id" element={<MovieOverview />} />
       </Routes>
       <Footer />
     </>
