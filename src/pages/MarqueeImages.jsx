@@ -15,56 +15,49 @@ function MarqueeImages() {
 
           <div class="marquee-item">
             <img
-              src="https://i.pinimg.com/originals/74/50/2e/74502e04d4892977ca6ef6ddc1265590.webp"
+              src="https://image.tmdb.org/t/p/w500/mm2t5dd1QFxtX6X56Z9U5ucsIb1.jpg"
               alt=""
             />
           </div>
 
           <div class="marquee-item">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzI_0WDKeBFDkGQIeYZUrCGzzCliMDgVxOEQ&usqp=CAU"
+              alt=""
+              src="https://image.tmdb.org/t/p/w500/jcUXVtJ6s0NG0EaxllQCAUtqdr0.jpg"
+            />
+          </div>
+
+          <div class="marquee-item">
+            <img
+              src="https://image.tmdb.org/t/p/w500/gC3tW9a45RGOzzSh6wv91pFnmFr.jpg"
               alt=""
             />
           </div>
 
           <div class="marquee-item">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWpD61Hlrw-zBSW6OA-NSURxP16FD2taeycw&usqp=CAU"
+              src="https://image.tmdb.org/t/p/w500/ogyw5LTmL53dVxsppcy8Dlm30Fu.jpg"
               alt=""
             />
           </div>
 
           <div class="marquee-item">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ76u-MFTZFfZ7ySsWt5zM1xt3XAmjgbuGzmQ&usqp=CAU"
+              src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
               alt=""
             />
           </div>
 
           <div class="marquee-item">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2HApjPxgFr5bxK2HvEQ4NHcBY5yR6ADXQlfLF8D6tefE7ffq7YAQ6XO21g3hU3oXttq4&usqp=CAU"
               alt=""
+              src="https://image.tmdb.org/t/p/w500/xmC2A7qPEfiOkQC58fZh8srWQ5v.jpg"
             />
           </div>
 
           <div class="marquee-item">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPZ2Isc6HG_ts9EB_KnQGwqJ97lqP9IooXqg&usqp=CAU"
-              alt=""
-            />
-          </div>
-
-          <div class="marquee-item">
-            <img
-              src="https://i.pinimg.com/originals/74/50/2e/74502e04d4892977ca6ef6ddc1265590.webp"
-              alt=""
-            />
-          </div>
-
-          <div class="marquee-item">
-            <img
-              src="https://i.pinimg.com/originals/74/50/2e/74502e04d4892977ca6ef6ddc1265590.webp"
+              src="https://image.tmdb.org/t/p/w500/h4VB6m0RwcicVEZvzftYZyKXs6K.jpg"
               alt=""
             />
           </div>
@@ -73,6 +66,13 @@ function MarqueeImages() {
             <img
               src="https://i.pinimg.com/originals/74/50/2e/74502e04d4892977ca6ef6ddc1265590.webp"
               alt=""
+            />
+          </div>
+
+          <div class="marquee-item">
+            <img
+              alt=""
+              src="https://image.tmdb.org/t/p/w500/tZ55C7gPExwzvBLCsZMqFZMbB2I.jpg"
             />
           </div>
 

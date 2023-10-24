@@ -8,6 +8,7 @@ import Loader from "./Loader";
 import MovieOverview from "./MovieOverview";
 
 function MovieMain() {
+  const serachDemo = `https://api.themoviedb.org/3/search/movie?api_key=323e3fe5a8237f5319c4b400fb4bd2d9&query=inception`;
   const url =
     "https://api.themoviedb.org/3/movie/popular?api_key=323e3fe5a8237f5319c4b400fb4bd2d9&page=3";
   const discoverUrl = `http://api.themoviedb.org/3/discover/movie?api_key=323e3fe5a8237f5319c4b400fb4bd2d9`;
@@ -72,13 +73,15 @@ function MovieMain() {
   // ----------------search------------------------
   const getSearch = async () => {
     if (query === "") return;
-    await fetch(`http://www.omdbapi.com/?apikey=f84fc31d&s=inception`)
+    await fetch(
+      `https://api.themoviedb.org/3/search/movie?api_key=323e3fe5a8237f5319c4b400fb4bd2d9&query=${query}`
+    )
       .then((res) => res.json())
-      .then((data) => setMovies(data.Search));
+      .then((data) => setMovies(data.results));
   };
 
   const handleClick = async () => {
-    getSearch();
+    await getSearch();
   };
 
   // ----------------------------------------------
@@ -166,12 +169,7 @@ function MovieMain() {
                     />
                     <figcaption>
                       <Link to={`/overview/${movie?.id}`}>
-                        <button
-                          onClick={() => console.log("ood myre")}
-                          class="btnViewMore hthree"
-                        >
-                          View More
-                        </button>
+                        <button class="btnViewMore hthree">View More</button>
                       </Link>
                     </figcaption>
                   </figure>

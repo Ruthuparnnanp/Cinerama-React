@@ -98,7 +98,7 @@
 .btnViewMore:hover {
   background-color: #222;
   color: #fff;
-  box-shadow: 0 2px 0 2px #0d3b66;
+  box-shadow: 0 2px 0 2px #222;
 }
 
 .btnViewMore:hover::before {
