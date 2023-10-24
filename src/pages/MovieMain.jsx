@@ -13,7 +13,14 @@ function MovieMain() {
   const discoverUrl = `http://api.themoviedb.org/3/discover/movie?api_key=323e3fe5a8237f5319c4b400fb4bd2d9`;
   const imgUrl = `https://image.tmdb.org/t/p/w500`;
   const queryUrl = `http://www.omdbapi.com/?apikey=f84fc31d&s=inception`; // use key=f84fc31d
-  const onSearch = `http://www.omdbapi.com/?apikey=f84fc31d&i=tt3731562`;
+  const onSearch = `http://www.omdbapi.com/?apikey=f84fc31d&i=tt3731562`; //particular search using imdb id
+  const onSerach =
+    "https://api.themoviedb.org/3/movie/299054?api_key=323e3fe5a8237f5319c4b400fb4bd2d9"; // particular search using movies id
+
+  const demoKeyfromYoutube = "bcc4ff10c2939665232d75d8bf0ec093";
+
+  const forGettingParticularMovie =
+    "https://api.themoviedb.org/3/movie/299054/credits?api_key=323e3fe5a8237f5319c4b400fb4bd2d9";
 
   const dramaUrl =
     "https://api.themoviedb.org/3/discover/movie?api_key=323e3fe5a8237f5319c4b400fb4bd2d9&with_genres=18&page=1";
@@ -62,19 +69,20 @@ function MovieMain() {
     getMovie();
   }, [page, genreId]);
 
-  // ---------------------------------------
+  // ----------------search------------------------
   const getSearch = async () => {
     if (query === "") return;
-    await fetch(`http://www.omdbapi.com/?apikey=f84fc31d&s=${query}`)
+    await fetch(`http://www.omdbapi.com/?apikey=f84fc31d&s=inception`)
       .then((res) => res.json())
       .then((data) => setMovies(data.Search));
   };
 
   const handleClick = async () => {
-    await getSearch();
+    getSearch();
   };
 
-  console.log(movies);
+  // ----------------------------------------------
+
   return (
     <>
       <div className="movies-wrapper">
@@ -144,17 +152,28 @@ function MovieMain() {
         <div className="movies-container">
           <section className="section-1">
             <div className="roww">
-              {movies?.length > 0 ? (
+              {loading ? (
+                <Loader />
+              ) : movies?.length > 0 ? (
                 movies?.map((movie) => (
                   <figure className="figuree rounded">
                     <img
-                      src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`}
+                      src={
+                        (movie?.Poster && movie?.Poster) ||
+                        `https://image.tmdb.org/t/p/w500/${movie?.poster_path}`
+                      }
                       alt="ok"
                     />
                     <figcaption>
-                      <button class="btnViewMore hthree">View More</button>
+                      <Link to={`/overview/${movie?.id}`}>
+                        <button
+                          onClick={() => console.log("ood myre")}
+                          class="btnViewMore hthree"
+                        >
+                          View More
+                        </button>
+                      </Link>
                     </figcaption>
-                    <Link></Link>
                   </figure>
                 ))
               ) : (
