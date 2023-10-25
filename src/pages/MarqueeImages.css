@@ -10,6 +10,7 @@
 .marquee {
   margin-bottom: 100px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .marquee-item {
@@ -32,5 +33,25 @@
   }
   100% {
     transform: translatex(-144vw);
+  }
+}
+
+@media (max-width: 850px) {
+  .marquee-item img {
+    width: 200px;
+    height: 245px;
+  }
+
+  @keyframes scrolling-small {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translatex(-312vw);
+    }
+  }
+
+  .marquee-content {
+    animation: scrolling-small 10s linear infinite;
   }
 }
