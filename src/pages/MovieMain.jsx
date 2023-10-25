@@ -43,6 +43,7 @@ function MovieMain() {
   const [page, setPage] = useState(1);
   const [genreId, setGenreId] = useState(80);
   const [prevId, setPrevId] = useState(80);
+  const [activeGenre, setActiveGenre] = useState("crime");
 
   const [loading, setLoading] = useState(false);
 
@@ -73,11 +74,13 @@ function MovieMain() {
   // ----------------search------------------------
   const getSearch = async () => {
     if (query === "") return;
+    setLoading(true);
     await fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=323e3fe5a8237f5319c4b400fb4bd2d9&query=${query}`
     )
       .then((res) => res.json())
       .then((data) => setMovies(data.results));
+    setLoading(false);
   };
 
   const handleClick = async () => {
@@ -101,30 +104,95 @@ function MovieMain() {
 
           {/*----------------------------- categories ------------------------- */}
           <Link
-            className="category-link current"
-            onClick={() => setGenreId(80)}
+            key={"crime"}
+            className={`${"crime" === activeGenre && "current"} category-link`}
+            onClick={() => {
+              setActiveGenre("crime");
+              setGenreId(80);
+            }}
           >
             <div className="genre">Crime</div>
           </Link>
-          <Link className="category-link cu" onClick={() => setGenreId(12)}>
+          <Link
+            key={"adventure"}
+            className={`${
+              "adventure" === activeGenre && "current"
+            } category-link`}
+            onClick={() => {
+              setActiveGenre("adventure");
+              setGenreId(12);
+            }}
+          >
             <div className="genre">Adventure</div>
           </Link>
-          <Link className="category-link cu" onClick={() => setGenreId(9648)}>
+
+          <Link
+            className={`${
+              "mystery" === activeGenre && "current"
+            } category-link`}
+            onClick={() => {
+              setActiveGenre("mystery");
+              setGenreId(9648);
+            }}
+          >
             <div className="genre">Mystery</div>
           </Link>
-          <Link className="category-link cu" onClick={() => setGenreId(53)}>
+
+          <Link
+            className={`${
+              "thriller" === activeGenre && "current"
+            } category-link`}
+            onClick={() => {
+              setActiveGenre("thriller");
+              setGenreId(53);
+            }}
+          >
             <div className="genre">Thriller</div>
           </Link>
-          <Link className="category-link cu" onClick={() => setGenreId(27)}>
+
+          <Link
+            className={`${"horror" === activeGenre && "current"} category-link`}
+            onClick={() => {
+              setActiveGenre("horror");
+              setGenreId(27);
+            }}
+          >
             <div className="genre">Horror</div>
           </Link>
-          <Link className="category-link cu" onClick={() => setGenreId(10749)}>
+
+          <Link
+            className={`${
+              "romance" === activeGenre && "current"
+            } category-link`}
+            onClick={() => {
+              setActiveGenre("romance");
+              setGenreId(10749);
+            }}
+          >
             <div className="genre">Romance</div>
           </Link>
-          <Link className="category-link cu" onClick={() => setGenreId(14)}>
+
+          <Link
+            className={`${
+              "fantasy" === activeGenre && "current"
+            } category-link`}
+            onClick={() => {
+              setActiveGenre("fantasy");
+              setGenreId(14);
+            }}
+          >
             <div className="genre">Fantasy</div>
           </Link>
-          <Link className="category-link cu" onClick={() => setGenreId(16)}>
+
+          <Link
+            className={`${
+              "animation" === activeGenre && "current"
+            } category-link`}
+            onClick={() => {
+              setActiveGenre("animation");
+              setGenreId(16);
+            }}
+          >
             <div className="genre">Animation</div>
           </Link>
 
@@ -165,7 +233,7 @@ function MovieMain() {
                         (movie?.Poster && movie?.Poster) ||
                         `https://image.tmdb.org/t/p/w500/${movie?.poster_path}`
                       }
-                      alt="ok"
+                      alt="No Images Available"
                     />
                     <figcaption>
                       <Link to={`/overview/${movie?.id}`}>

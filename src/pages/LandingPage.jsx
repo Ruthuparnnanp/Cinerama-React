@@ -1,13 +1,13 @@
 import { Col, Row } from "react-bootstrap";
 import CardSwiper from "./CardSwiper";
 import "./LandingPage.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NextButton from "../components/NextButton";
 
 const LandingPage = () => {
   const navigate = useNavigate();
-  const navigateToHome = () => {
-    navigate("/home");
+  const navigateToMovies = () => {
+    navigate("/movies");
   };
 
   return (
@@ -24,7 +24,16 @@ const LandingPage = () => {
               officia corporis ullam tenetur?
             </p>
 
-            <NextButton />
+            {/* <Link to={"/movies"}>
+              <button className="btn btn-danger">chunni</button>
+            </Link> */}
+
+            <button
+              className="wrapperForBtnComponent"
+              onClick={navigateToMovies}
+            >
+              <NextButton />
+            </button>
           </Col>
           <Col></Col>
           <Col md={5}>

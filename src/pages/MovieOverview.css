@@ -46,9 +46,11 @@
   margin-bottom: 36px;
   .title1 {
     color: red;
+    font-family: "Nova Square", sans-serif;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 10px;
+    line-height: 1;
     span {
       top: 3px;
       background: #c4af3d;
@@ -115,7 +117,8 @@
 }
 
 .tag {
-  background-color: #131312;
+  background-color: #55f191;
+  color: black;
 }
 
 .avatars {

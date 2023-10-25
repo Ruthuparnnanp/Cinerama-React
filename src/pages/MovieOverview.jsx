@@ -16,8 +16,8 @@ function MovieOverview() {
 
   const backgroundImage =
     (movie?.backdrop_path &&
-      `https://image.tmdb.org/t/p/w500/${movie?.poster_path}`) ||
-    `https://image.tmdb.org/t/p/w500/${movie?.belongs_to_collection?.poster_path}`;
+      `https://image.tmdb.org/t/p/w500/${movie?.backdrop_path}`) ||
+    `https://image.tmdb.org/t/p/w500/${movie?.belongs_to_collection?.backdrop_path}`;
 
   const getCast = async () => {
     setLoading(true);
@@ -57,10 +57,10 @@ function MovieOverview() {
               <img
                 src={
                   (movie?.poster_path &&
-                    `https://image.tmdb.org/t/p/w500/${movie?.backdrop_path}`) ||
-                  `https://image.tmdb.org/t/p/w500/${movie?.belongs_to_collection?.backdrop_path}`
+                    `https://image.tmdb.org/t/p/w500/${movie?.poster_path}`) ||
+                  `https://image.tmdb.org/t/p/w500/${movie?.belongs_to_collection?.poster_path}`
                 }
-                alt="cover"
+                alt="No cover Images sorry"
                 className="cover rounded"
               />
             </div>

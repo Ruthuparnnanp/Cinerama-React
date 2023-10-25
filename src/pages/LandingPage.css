@@ -132,3 +132,9 @@
     animation-timing-function: ease-out;
   }
 }
+
+/* wrapper button styles */
+.wrapperForBtnComponent {
+  background-color: transparent;
+  border: none;
+}

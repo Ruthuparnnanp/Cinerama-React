@@ -1,5 +1,5 @@
 .movies-sidebar {
-  width: 20vw !important;
+  width: 20vw;
   border: 2px solid red;
   padding: 10px;
 }
@@ -109,4 +109,44 @@
 .btnViewMore:active {
   transform: scale(0.9);
 }
-/* --------------------------------------------- */
+/* ----------------------------------------media queries---------------------------------- */
+@media (max-width: 760px) {
+  .movies-wrapper {
+    flex-direction: column;
+  }
+
+  .movies-sidebar {
+    display: flex;
+    overflow-x: scroll;
+    width: 100% !important;
+    height: 76px !important;
+  }
+
+  .logo-image {
+    display: none !important;
+  }
+
+  .category-link.current {
+    color: initial;
+    border-color: initial;
+    border: 1px;
+    border-radius: 0;
+    -webkit-text-decoration: none;
+  }
+
+  .movies-container {
+    height: 800px !important;
+  }
+
+  .search-form:hover {
+    width: 18rem;
+  }
+
+  .search-input {
+    font-size: 14px !important;
+  }
+
+  .search-button {
+    font-size: 14px !important;
+  }
+}

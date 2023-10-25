@@ -663,13 +663,11 @@ button {
 @media only screen and (max-width: 80em) {
   .search-button {
     color: var(--text-color);
-    font-size: 10px;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .search-button {
     color: var(--text-color);
-    font-size: 8px;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -742,12 +740,12 @@ button {
 }
 @media only screen and (max-width: 80em) {
   .search-input {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .search-input {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -758,7 +756,7 @@ button {
 }
 @media only screen and (max-width: 37.5em) {
   .search-input {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 90em) {
