@@ -5,8 +5,8 @@ function Features() {
   return (
     <>
       <div className="feature-wrapper">
-        <h1>Reliable, efficient delivery</h1>
-        <h1>Powered by Technology</h1>
+        <h1>Explore the Excellence</h1>
+        <h1>That Redefine Your Movie Watching Experience</h1>
 
         <p>
           Our Artificial Intelligence powered tools use millions of project data
@@ -15,8 +15,8 @@ function Features() {
 
         <div class="cardss">
           <div class="superr">
-            <h3>Supervisor</h3>
-            <p>Monitors activity to identify project roadblocks</p>
+            <h3>Searching</h3>
+            <p>Easily navigate through our extensive movie database using our intuitive search feature. </p>
             <img
               className="feature-img"
               src="https://i.postimg.cc/15RhtPW4/icon-supervisor.png"
@@ -25,10 +25,9 @@ function Features() {
           </div>
 
           <div class="teamm">
-            <h3>Team Builder</h3>
+            <h3>Seamless Browsing</h3>
             <p>
-              Scans our talent network to create the optimal team for your
-              project
+            Dive into a seamless movie-browsing experience as you surf through our carefully organized collection.
             </p>
             <img
               className="feature-img"
@@ -38,8 +37,8 @@ function Features() {
           </div>
 
           <div class="karmaa">
-            <h3>Karma</h3>
-            <p>Regularly evaluates our talent to ensure quality</p>
+            <h3>User-Friendly</h3>
+            <p>Enjoy a sleek and user-friendly interface that enhances your overall interaction with the website. </p>
             <img
               className="feature-img"
               src="https://i.postimg.cc/Njyn90RG/icon-karma.png"
@@ -48,9 +47,9 @@ function Features() {
           </div>
 
           <div class="calcc">
-            <h3>Calculator</h3>
+            <h3>Endless Variety</h3>
             <p>
-              Uses data from past projects to provide better delivery estimates
+            Immerse yourself in an infinite array of movies covering every genre, era, and theme imaginable.
             </p>
             <img
               className="feature-img"

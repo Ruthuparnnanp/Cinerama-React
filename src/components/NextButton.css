@@ -1,8 +1,8 @@
 .btn-conteiner {
   display: flex;
   --color-text: #ffffff;
-  --color-background: #ff135a;
-  --color-outline: #ff145b80;
+  --color-background: rgb(224, 13, 13);
+  --color-outline: red;
   --color-shadow: #00000080;
 }
 

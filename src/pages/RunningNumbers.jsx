@@ -71,29 +71,29 @@ function RunningNumbers() {
 
   return (
     <>
-      <div className="wrapper">
+      <div  className="wrapper">
         <div className="counter-container">
-          <i className="fab fa-instagram fa-3x"></i>
+          <i className="fa-solid fa-film fa-3x"></i>
           <div className="counter" ref={counterRef} data-target="12000">
             {count}
           </div>
-          <span>Instagram Followers</span>
+          <span>Specials</span>
         </div>
 
         <div className="counter-container">
-          <i className="fab fa-youtube fa-3x"></i>
+        <i class="fa-solid fa-clapperboard fa-3x"></i>
           <div className="counter" data-target="5000">
             {county}
           </div>
-          <span>YouTube Subscribers</span>
+          <span>Tv Shows</span>
         </div>
 
         <div className="counter-container">
-          <i className="fab fa-facebook fa-3x"></i>
+          <i className="fa-solid fa-video fa-3x"></i>
           <div className="counter" data-target="7500">
             {bunty}
           </div>
-          <span>Facebook Fanssss</span>
+          <span>Serial Sensations</span>
         </div>
       </div>
     </>

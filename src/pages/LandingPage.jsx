@@ -18,10 +18,7 @@ const LandingPage = () => {
             <h1 className="fw-bold heading bounce-in-top">CINERAMA</h1>
             <hr className="hr" />
             <p style={{ textAlign: "justify" }}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-              aliquam quod illo exercitationem, dolorum architecto, minus
-              dolores sint corrupti, aut officiis eaque! Totam odio quia laborum
-              officia corporis ullam tenetur?
+            Indulge your senses in a kaleidoscope of cinematic brilliance on our movie platform. With a carefully curated selection that spans genres and eras, our website is your gateway to an immersive world of storytelling.
             </p>
 
             {/* <Link to={"/movies"}>

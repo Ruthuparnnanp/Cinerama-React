@@ -26,6 +26,7 @@
 .counter {
   font-size: 60px;
   margin-top: 10px;
+  color: red;
 }
 
 @media (max-width: 580px) {
@@ -51,10 +52,10 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  border: 2px solid red;
   margin-bottom: 100px;
-  background-color: #b38ac5;
+  background-color: #000;
   color: black;
   overflow: hidden;
   gap: 20px;
+  color: #fff !important;
 }
