@@ -273,6 +273,14 @@
   margin-right: 10px;
 }
 
-.mgb {
-  margin-bottom: 100px !important;
+
+
+.back{
+  margin-bottom: 70px;
+}
+
+@media(max-width:440px){
+  .back{
+    max-width: 97% !important;
+  }
 }

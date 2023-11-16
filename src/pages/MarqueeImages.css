@@ -54,4 +54,8 @@
   .marquee-content {
     animation: scrolling-small 10s linear infinite;
   }
+
+  .marquee{
+    margin-top: 150px;
+  }
 }

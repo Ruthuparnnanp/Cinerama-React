@@ -138,3 +138,15 @@
   background-color: transparent;
   border: none;
 }
+
+
+@media(max-width:670px){
+  .wrapperForBtnComponent{
+    margin-bottom: 80px;
+  }
+
+  .heading{
+    margin-top: 50px !important;
+  }
+
+}

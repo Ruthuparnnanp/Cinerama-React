@@ -17,12 +17,12 @@ function Home() {
       {loading ? (
         <Loader />
       ) : (
-        <>
+        <div className="homie">
           <LandingPage />
           <MarqueeImages />
           <RunningNumbers />
           <Features />
-        </>
+        </div>
       )}
     </>
   );

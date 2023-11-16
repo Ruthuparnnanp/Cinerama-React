@@ -243,7 +243,7 @@ function MovieMain() {
                   </figure>
                 ))
               ) : (
-                <p className="fs-2 text-danger">Nothing to display</p>
+                <p className="fs-2 text-danger">No Movies to display !!!</p>
               )}
             </div>
           </section>

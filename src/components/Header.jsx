@@ -6,17 +6,24 @@ import { useNavigate } from "react-router-dom";
 function Header() {
   const navigate = useNavigate();
 
-  const handleClick = ()=>{
+  const handleClick = () => {
     navigate("/");
-  }
+  };
 
   return (
     <>
-      <Navbar style={{backgroundColor:"#111"}} data-bs-theme="dark">
+      <Navbar style={{ backgroundColor: "#111" }} data-bs-theme="dark">
         <Container>
-          <Navbar.Brand style={{cursor:"pointer"}} onClick={handleClick}>Cinerama</Navbar.Brand>
+          <Navbar.Brand
+            style={{ cursor: "pointer", color: "red" }}
+            onClick={handleClick}
+          >
+            Cinerama
+          </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={handleClick}>Home</Nav.Link>
+            <Nav.Link style={{ color: "red" }} onClick={handleClick}>
+              Home
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
