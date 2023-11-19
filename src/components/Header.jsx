@@ -15,10 +15,10 @@ function Header() {
       <Navbar style={{ backgroundColor: "#111" }} data-bs-theme="dark">
         <Container>
           <Navbar.Brand
-            style={{ cursor: "pointer", color: "red" }}
+            style={{ cursor: "pointer", color: "red",fontWeight:"bold" }}
             onClick={handleClick}
           >
-            Cinerama
+            CINERAMA
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link style={{ color: "red" }} onClick={handleClick}>
